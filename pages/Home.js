@@ -21,8 +21,7 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-    
-    
+    <KeyboardAvoidingView behavior="padding">
       <ScrollView
         contentContainerStyle={{
           flexGrow: 1
@@ -57,6 +56,7 @@ export default function App() {
           </View>
         </TouchableOpacity>
       </View>
+      </KeyboardAvoidingView>
     </View>
   );
 }
